@@ -25,43 +25,91 @@ time, mark, audio, video {
 
 body {
     font-family: sans-serif;
-  }
+}
 
-  /*  NAVBAR  */
+header {
+    background-color: #333;
+}
 
+/*  NAVBAR  */
 
-  /*  HAMBURGER BUTTON  */
-  
-  nav button {
-    background: transparent;
-    border: 2px solid #000;
-    border-radius: 8px;
-  }
-
-  .navButton {
-    --button-color: #000;
+.navbar {
+    align-items: center;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
     overflow: hidden;
-  }
+}
 
-  .navButton svg {
+#myLinks {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    text-transform: uppercase;
+}
+
+#myLinks a {
+    margin: 1vh;
+    padding: 2vh;
+}
+
+/*  HAMBURGER BUTTON  */
+  
+nav button {
+    background: transparent;
+    border: transparent;
+    border-radius: 8px;
+}
+
+.navButton {
+    --button-color: #ffffff;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    right: 5%;
+    top: 1%;
+}
+
+.navButton svg {
     width: 5vh;
-  }
+}
   
-  .navButton .hamburger {
+.navButton .hamburger {
     transition: translate 1s, rotate 1s;
-  }
+}
   
-  .navButton[aria-expanded="true"] .hamburger {
+.navButton[aria-expanded="true"] .hamburger {
     translate: 2px -2px;
     rotate: 0.125turn;
-  }
+}
   
-  .navButton .line {
+.navButton .line {
     transition: 1s;
     stroke-dasharray: 60 31 60 300;
-  }
+}
   
-  .navButton[aria-expanded="true"] .line {
+.navButton[aria-expanded="true"] .line {
     stroke-dasharray: 60 105 60 300;
     stroke-dashoffset: -90;
-  }
+}
+
+/*  MEDIA QUERIES  */
+
+/*  NAVBAR  */
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding-top: 8vh;
+    }
+    .navButton {
+        display: flex;
+    }
+    .navbar {
+        align-items: center;
+        justify-content: center;
+    }
+    #myLinks {
+        display: none;
+        flex-direction: column;
+    }
+}

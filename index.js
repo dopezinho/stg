@@ -1,4 +1,15 @@
-// nav button animation
+// navbar mobile version
+
+function mobileNav() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+
+// navbar button animation
 
 const buttons = document.querySelectorAll("button");
 
