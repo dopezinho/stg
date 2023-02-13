@@ -42,10 +42,22 @@ header {
     overflow: hidden;
 }
 
+.logo {
+    position: absolute;
+    left: 4%;
+    top: 2%;
+}
+
+.logo a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
 #myLinks {
     align-items: center;
     background-color: #333;
     color: #fff;
+    cursor: pointer;
     display: flex;
     text-transform: uppercase;
 }
@@ -107,12 +119,16 @@ header {
     header {
         padding-top: 7vh;
     }
-    .navButton {
-        display: flex;
-    }
     .navbar {
         align-items: center;
         justify-content: center;
+    }    
+    .logo {
+        left: 6%;
+        top: 3%;
+    }
+    .navButton {
+        display: flex;
     }
     #myLinks {
         display: none;
