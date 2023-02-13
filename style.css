@@ -50,8 +50,12 @@ header {
 }
 
 #myLinks a {
-    margin: 1vh;
     padding: 2vh;
+    margin: 1vh;
+}
+
+#myLinks a:nth-child(3){
+    margin-right: 4vh;
 }
 
 /*  HAMBURGER BUTTON  */
@@ -108,5 +112,8 @@ header {
     #myLinks {
         display: none;
         flex-direction: column;
+    }
+    #myLinks a:nth-child(3){
+        margin-right: 1vh;
     }
 }
