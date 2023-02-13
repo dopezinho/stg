@@ -25,6 +25,7 @@ time, mark, audio, video {
 
 body {
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 header {
@@ -50,8 +51,12 @@ header {
 }
 
 #myLinks a {
-    padding: 2vh;
-    margin: 1vh;
+    padding: 2vh 2vh;
+    margin: 0 1vh;
+}
+#myLinks a:hover {
+    background: #fff;
+    color: #333;
 }
 
 #myLinks a:nth-child(3){
@@ -80,7 +85,7 @@ header {
 }
   
 .navButton[aria-expanded="true"] .hamburger {
-    translate: 2px -2px;
+    translate: 0 0;
     rotate: 0.125turn;
 }
   
@@ -100,7 +105,7 @@ header {
 
 @media screen and (max-width: 1200px) {
     header {
-        padding-top: 8vh;
+        padding-top: 7vh;
     }
     .navButton {
         display: flex;
@@ -115,5 +120,6 @@ header {
     }
     #myLinks a:nth-child(3){
         margin-right: 1vh;
+        margin-bottom: 6vh;
     }
 }
