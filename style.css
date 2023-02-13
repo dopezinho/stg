@@ -24,46 +24,44 @@ time, mark, audio, video {
 /*  CSSZIN  */
 
 body {
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-    background: hsl(48, 18%, 83%);
+    font-family: sans-serif;
   }
 
   /*  NAVBAR  */
 
-  nav {
-    
-  }
 
   /*  HAMBURGER BUTTON  */
   
-  button {
+  nav button {
     background: transparent;
-    border: 10px solid var(--button-color, #000);
-    border-radius: 1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
   }
 
-  .button {
-    --button-color: black;
+  .navButton {
+    --button-color: #000;
     overflow: hidden;
   }
+
+  .navButton svg {
+    width: 5vh;
+  }
   
-  .button .hamburger {
+  .navButton .hamburger {
     transition: translate 1s, rotate 1s;
   }
   
-  .button[aria-expanded="true"] .hamburger {
-    translate: 10px -10px;
+  .navButton[aria-expanded="true"] .hamburger {
+    translate: 2px -2px;
     rotate: 0.125turn;
   }
   
-  .button .line {
+  .navButton .line {
     transition: 1s;
     stroke-dasharray: 60 31 60 300;
   }
   
-  .button[aria-expanded="true"] .line {
+  .navButton[aria-expanded="true"] .line {
     stroke-dasharray: 60 105 60 300;
     stroke-dashoffset: -90;
   }
