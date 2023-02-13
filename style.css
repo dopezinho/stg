@@ -116,7 +116,67 @@ header {
 
 /*  O QUE FAZEMOS  */
 
+.oqfzTxt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.oqfzTxt h2 {    
+    font-size: 4vh;
+    font-weight: bold;
+    margin: 15vh 0 5vh 0;
+    text-transform: uppercase;
+}
+
+.oqfzTxt h4 {
+    color: #333333eb;
+    font-size: 2.5vh;
+    font-weight: 300;
+    max-width: 800px;
+    text-align: center;
+}
+
+.oqfzF {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.oqfz {    
+    background-color: #a9e0ef48;
+    margin: 5vh 2vh;
+    padding: 1vh 5vh 3vh 5vh;
+    transition: all 0.5s;
+    border-top: solid 3px #dddddd;
+    border-radius: 5px;
+    border: 3px solid #dddddd98;
+}
+
+.oqfz:hover {
+    -webkit-box-shadow: 0px 19px 60px -23px #9e9e9e;
+    -moz-box-shadow: 0px 19px 60px -23px #9e9e9e;
+    box-shadow: 0px 19px 60px -23px #9e9e9e;
+    border-top: 3px solid #3ddf43d3;
+}
+
+.oqfz img {
+    width: 280px;
+}
+
+.oqfz h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+.oqfz h4 {
+    font-weight: 300;
+    max-width: 280px;
+    margin-bottom: 2vh;
+    text-align: center;
+}
 
 /*  DEPOIMENTOS  */
 
