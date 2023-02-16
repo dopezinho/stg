@@ -219,3 +219,128 @@ header {
         margin-bottom: 6vh;
     }
 }
+
+/* Initial Photos*/
+
+.initialPage {
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+    width: 100%;
+}
+
+.initialPhotos {
+    position: absolute;
+    top: 10;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.initialPhotos.current {
+    opacity: 1;
+}
+
+.initialPhotos:first-child {
+    background-color: #333;
+}
+
+.initialPhotos:nth-child(2) {
+    background-color: brown;
+}
+
+.initialPhotos:nth-child(3) {
+    background-color: burlywood;
+}
+
+.initialPage .content {
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    background-color: #dddddd60;
+    width: 35%;
+    opacity: 0;
+    padding: 20px;
+}
+
+.initialPage .content h1 {
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: large;
+}
+
+.initialPhotos.current .content {
+    left: 20%;
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+.changePhoto {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    height: 5px;
+    width: 25px;
+    border: solid 1px #ffffffff;
+    z-index: 1000;
+}
+
+.changePhoto.pLeft {
+    left: 47%;
+}
+
+.changePhoto.pRight {
+    left: 53%;
+}
+
+.changePhoto:hover {
+    background-color: #dddddd50;
+}
+
+/* arrows */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+  
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+  
+.carousel-arrow.left {
+    left: 20px;
+    transform: translateY(-130px);
+}
+  
+.carousel-arrow.right {
+    right: 20px;
+    transform: translateY(-130px);
+}
+  
+.carousel-arrow i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-arrow:hover {
+    background-color: transparent;
+    transform: translateY(-130px) scale(1.6);
+    transition: all s ease-in-out;
+}
