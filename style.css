@@ -182,6 +182,7 @@ header {
 
 .changePhoto.pLeft {
     left: 47%;
+    background-color: #ffffff;
 }
 
 .changePhoto.pRight {
