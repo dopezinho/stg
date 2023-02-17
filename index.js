@@ -29,13 +29,7 @@ buttons.forEach((button) => {
 
 // initial photos buttons
 
-const initialTemplate = document.querySelector('.initialPage')
-const initialPhotos = document.querySelectorAll('.initialPhotos')
-const leftButton = document.querySelector('#leftButton')
-const rightButton = document.querySelector('#rightButton')
-const auto = false
-const intervalTime = 5000
-let slideInterval
+
 
 /*const nextSlide = () => {
   const current = document.querySelector('.current')
@@ -70,6 +64,7 @@ rightButton.addEventListener('click', e => {
 
 // Buttons to change Photos
 
+const initialPhotos = document.querySelectorAll('.initialPhotos')
 const buttonsPhotos = document.querySelectorAll('.changePhoto')
 
 buttonsPhotos[0].addEventListener('click', e => {
@@ -99,3 +94,61 @@ buttonsPhotos[2].addEventListener('click', e => {
   buttonsPhotos[0].style.backgroundColor = 'transparent'
   buttonsPhotos[1].style.backgroundColor = 'transparent'
 })
+
+// Second Carousel
+
+
+let depoTemplate = document.querySelector('.depoTemplate')
+const leftButton = document.querySelector('#leftButton')
+const rightButton = document.querySelector('#rightButton')
+const dialogTemplate = document.createElement('div')
+const dialogBox = document.createElement('div')
+const depoInfo = document.createElement('p')
+const dialogImage = document.createElement('div')
+
+dialogTemplate.classList.add('dialogTemplate')
+dialogBox.classList.add('dialogBox')
+depoInfo.classList.add('depoInfo')
+dialogImage.classList.add('dialogImage')
+
+dialogBox.innerHTML = '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dignissimos quibusdam illo debitis nulla natus?"'
+depoInfo.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+
+dialogTemplate.appendChild(dialogBox)
+dialogTemplate.appendChild(depoInfo)
+
+
+depoTemplate.append(dialogTemplate)
+depoTemplate.append(dialogImage)
+
+
+const depoList = [['"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dignissimos quibusdam illo debitis nulla natus?"','Lorem ipsum dolor sit amet consectetur adipisicing elit.','black'],
+                  ['"Vai Caralho, Corinthians porra. Facilis dignissimos quibusdam illo"','Lorem ipsum dolor sit ','blue'],
+                  ['"CADE O ISGUEIRO??. CADE SAPORRA???? Facilis dignissimos quibusdam illo"','Felix','blue'],
+                  ['"XURU XURU, CADE O XURU XURU. Facilis dignissimos quibusdam illo"','Lorem ipsum dolor sit ','blue']]
+console.log(depoList);
+let dep = 1
+let leftPosition = 0;
+
+setInterval(() => {
+  dialogTemplate.style.animation = 'none';
+  requestAnimationFrame(() => {
+    dialogTemplate.style.animation = 'changeDepo 10s ease-in-out infinite';
+    dialogImage.style.animation = 'changeDepo 10s ease-in-out infinite'
+    setTimeout(() => {
+      dialogBox.innerHTML = `${depoList[dep][0]}`;
+      depoInfo.innerHTML = `${depoList[dep][1]}`;
+    }, 1000); // delay execution by 1 second
+    if(dep == depoList.length -1){
+
+      dep = 0
+      console.log(dep);
+    }else {
+      dep++;
+      console.log(dep);
+    }
+  });
+}, 10000)
+
+
+
