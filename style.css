@@ -362,6 +362,54 @@ header {
 
 /*  DOAÇÕES  */
 
+.doaSec {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.doaImg {
+    align-items: center;
+    display: flex;
+}
+
+
+.doaTxt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.doaTxt h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5vh;
+    text-transform: uppercase;
+}
+
+.doaTxt h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.doaTxt li {
+    font-size: 16px;
+}
+
+.doaTxt button {
+    background: #333;
+    border: transparent;
+    border-radius: 6px;
+    color: #fff;
+    height: 6vh;
+    margin-top: 10vh;
+    text-transform: uppercase;
+    width: 15vh;
+}
 
 
 /*  NOTÍCIAS  */
