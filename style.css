@@ -239,6 +239,55 @@ header {
     transition: all s ease-in-out;
 }
 
+/*  LANDING PAGE BOXES*/
+
+.lpBoxes {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.box1, .box2, .box3 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -5vh;    
+    max-width: 16%;
+    z-index: 1000;
+}
+
+.box1 {
+    background: #f9f9f9;
+}
+
+.box2 {
+    background: #d2d2d2;
+}
+
+.box3 {
+    background: #a7a5a5;
+}
+
+.box1 img, .box2 img, .box3 img {
+    height: 5vh;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+
+.box1 h2, .box2 h2, .box3 h2 {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+}
+
+.box1 h4, .box2 h4, .box3 h4 {
+    font-size: 1.5vh;
+    padding: 0 5vh 5vh 5vh;
+    text-align: center;
+}
+
 /*  O QUE FAZEMOS  */
 
 .oqfzTxt {
@@ -250,7 +299,7 @@ header {
 .oqfzTxt h2 {    
     font-size: 4vh;
     font-weight: bold;
-    margin: 15vh 0 5vh 0;
+    margin-top: 5vh;
     text-transform: uppercase;
 }
 
@@ -269,14 +318,18 @@ header {
     justify-content: center;
 }
 
-.oqfz {    
-    background-color: #a9e0ef48;
-    margin: 5vh 2vh;
-    padding: 1vh 5vh 3vh 5vh;
-    transition: all 0.5s;
+.oqfz {
+    align-items: center;   
+    background-color: #a7cfda48;
     border-top: solid 3px #dddddd;
     border-radius: 5px;
     border: 3px solid #dddddd98;
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    margin: 5vh 2vh;
+    padding: 1vh 5vh 3vh 5vh;
+    transition: all 0.5s;
 }
 
 .oqfz:hover {
@@ -342,6 +395,19 @@ header {
     #myLinks a:nth-child(3){
         margin-right: 1vh;
         margin-bottom: 6vh;
+    }
+}
+
+/*  Landing Page Boxes  */
+
+@media screen and (max-width: 600px) {
+    .lpBoxes {
+        flex-direction: column;
+    }
+    
+    .box1, .box2, .box3 {
+        margin-top: 5vh;
+        max-width: 80%;
     }
 }
 
