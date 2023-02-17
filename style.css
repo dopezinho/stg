@@ -419,7 +419,93 @@ header {
 
 /*  NOTÍCIAS  */
 
+.news {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.newsHead h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 10vh 0;
+}
+
+.newsContent {
+    align-items: center;
+    display: flex;
+}
+
+.newsBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsBlock img {
+    height: 40vh;
+    margin-bottom: 2vh;
+}
+
+.newsBlock h3 {
+    font-size: 20px;
+    margin-bottom: 2vh;
+    max-width: 80%;
+}
+.newsBlock p {
+    font-weight: 300;
+    margin-left: -14vw;
+    margin-bottom: 2vh;
+}
+.newsBlock h4 {
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 80%;
+    margin-bottom: 20vh;
+}
+
+/*  FOOTER  */
+
+footer {
+    background: #333;
+}
+
+.footCols {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.square {
+    border-radius: 300px;
+    position: absolute;
+    left: 7%;
+    top: 472%;
+}
+
+.footCol2, .footCol3, .footCol4 {
+    color: #fff;
+    padding: 10vh;
+}
+
+.footCol3 {
+    padding-right: 15vh;
+}
+
+.footCol4 {
+    border-left: 1px solid #fff;
+    padding-left: 15vh;
+}
+
+.footerFoot {
+    border-top: 1px solid #fff;
+}
+
+.footerFoot h4 {
+    color: #fff;
+    padding: 5vh;
+    text-align: center;
+}
 
 
 /*  MEDIA QUERIES  */
@@ -493,5 +579,59 @@ header {
     .doaTxt li {
         font-size: 20px;
         letter-spacing: 0.1vh;
+    }
+}
+
+/*  Notícias  */
+
+
+@media screen and (max-width: 600px) {
+    
+    .newsHead h2 {
+        font-size: 40px;
+    }
+    
+    .newsContent {
+        flex-direction: column;
+    }
+    
+    .newsBlock img {
+        height: 30vh;
+    }
+
+    .newsBlock p {
+        font-weight: 300;
+        margin-left: -45vw;
+    }
+    .newsBlock h4 {
+        font-size: 20px;
+    }
+} 
+
+/*  Footer  */
+
+
+@media screen and (max-width: 600px) {  
+    .footCols {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .square {
+        left: 27.5%;
+        top: 923%;
+    }
+    
+    .footCol2, .footCol3, .footCol4 {
+        font-size: 18px;
+        font-weight: 300;
+        padding: 3vh;
+    }
+    
+    .footCol2, .footCol3 {
+        padding-top: 15vh;
+    }
+    
+    .footCol4 {
+        border: transparent;
     }
 }
