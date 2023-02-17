@@ -494,6 +494,10 @@ footer {
     border-top: 1px solid #fff;
 }
 
+.footCols li {
+    list-style: none;
+}
+
 .footerFoot h4 {
     color: #fff;
     padding: 5vh;
@@ -606,8 +610,8 @@ footer {
 
 @media screen and (max-width: 600px) {  
     .footCols {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     
     .footCol2, .footCol3, .footCol4 {
@@ -618,5 +622,9 @@ footer {
     
     .footCol4 {
         border-left: transparent;
+    }
+
+    .footCols li {
+        text-align: center;
     }
 }
