@@ -73,8 +73,8 @@ rightButton.addEventListener('click', e => {
 const buttonsPhotos = document.querySelectorAll('.changePhoto')
 
 buttonsPhotos[0].addEventListener('click', e => {
-  initialPhotos[0].classList.add('current')
-  initialPhotos[1].classList.remove('current')
+  initialPhotos[1].classList.add('current')
+  initialPhotos[0].classList.remove('current')
   initialPhotos[2].classList.remove('current')
   buttonsPhotos[0].style.backgroundColor = '#ffffffff'
   buttonsPhotos[1].style.backgroundColor = 'transparent'
@@ -82,9 +82,9 @@ buttonsPhotos[0].addEventListener('click', e => {
 })
 
 buttonsPhotos[1].addEventListener('click', e => {
-  initialPhotos[1].classList.add('current')
+  initialPhotos[0].classList.add('current')
   initialPhotos[2].classList.remove('current')
-  initialPhotos[0].classList.remove('current')
+  initialPhotos[1].classList.remove('current')
   buttonsPhotos[1].style.backgroundColor = '#ffffffff'
   buttonsPhotos[2].style.backgroundColor = 'transparent'
   buttonsPhotos[0].style.backgroundColor = 'transparent'
