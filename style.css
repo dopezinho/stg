@@ -374,6 +374,10 @@ header {
     display: flex;
 }
 
+.doaImg img {
+    height: 90vh;
+}
+
 
 .doaTxt {
     align-items: center;
@@ -393,6 +397,7 @@ header {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 10vh;
+    max-width: 80%;
     text-align: center;
 }
 
@@ -406,7 +411,7 @@ header {
     border-radius: 6px;
     color: #fff;
     height: 6vh;
-    margin-top: 10vh;
+    margin: 10vh 0;
     text-transform: uppercase;
     width: 15vh;
 }
@@ -459,3 +464,34 @@ header {
     }
 }
 
+/*  DOAÇÕES  */
+
+
+@media screen and (max-width: 600px) {
+    .doaSec {
+        flex-direction: column;
+    }
+    
+    .doaImg img {
+        height: 55vh;
+        margin-bottom: 10vh;
+    }    
+    
+    .doaTxt {
+        max-width: 80%;
+    }
+    
+    .doaTxt h2 {
+        font-size: 36px;
+        margin-bottom: 3vh;
+    }
+    
+    .doaTxt h3 {
+        letter-spacing: 0.15vh;
+    }
+    
+    .doaTxt li {
+        font-size: 20px;
+        letter-spacing: 0.1vh;
+    }
+}
