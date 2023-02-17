@@ -83,7 +83,7 @@ buttonsPhotos[1].addEventListener('click', e => {
   buttonsPhotos[1].style.backgroundColor = '#ffffffff'
   buttonsPhotos[2].style.backgroundColor = 'transparent'
   buttonsPhotos[0].style.backgroundColor = 'transparent'
-  
+
 })
 
 buttonsPhotos[2].addEventListener('click', e => {
@@ -99,33 +99,38 @@ buttonsPhotos[2].addEventListener('click', e => {
 
 
 let depoTemplate = document.querySelector('.depoTemplate')
-const leftButton = document.querySelector('#leftButton')
-const rightButton = document.querySelector('#rightButton')
 const dialogTemplate = document.createElement('div')
 const dialogBox = document.createElement('div')
 const depoInfo = document.createElement('p')
 const dialogImage = document.createElement('div')
+const captionEBox = document.createElement('div')
 
 dialogTemplate.classList.add('dialogTemplate')
 dialogBox.classList.add('dialogBox')
 depoInfo.classList.add('depoInfo')
 dialogImage.classList.add('dialogImage')
+captionEBox.classList.add('captionEBox')
 
 dialogBox.innerHTML = '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dignissimos quibusdam illo debitis nulla natus?"'
 depoInfo.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
 
-dialogTemplate.appendChild(dialogBox)
-dialogTemplate.appendChild(depoInfo)
+captionEBox.appendChild(dialogBox)
+captionEBox.appendChild(depoInfo)
+
+
+dialogTemplate.appendChild(captionEBox)
+dialogTemplate.appendChild(dialogImage)
+
 
 
 depoTemplate.append(dialogTemplate)
-depoTemplate.append(dialogImage)
 
 
-const depoList = [['"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dignissimos quibusdam illo debitis nulla natus?"','Lorem ipsum dolor sit amet consectetur adipisicing elit.','black'],
-                  ['"Vai Caralho, Corinthians porra. Facilis dignissimos quibusdam illo"','Lorem ipsum dolor sit ','blue'],
-                  ['"CADE O ISGUEIRO??. CADE SAPORRA???? Facilis dignissimos quibusdam illo"','Felix','blue'],
-                  ['"XURU XURU, CADE O XURU XURU. Facilis dignissimos quibusdam illo"','Lorem ipsum dolor sit ','blue']]
+
+const depoList = [['"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dignissimos quibusdam illo debitis nulla natus?"', 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', 'black'],
+['"Vai Caralho, Corinthians porra. Facilis dignissimos quibusdam illo"', 'Lorem ipsum dolor sit ', 'blue'],
+['"CADE O ISGUEIRO??. CADE SAPORRA???? Facilis dignissimos quibusdam illo"', 'Felix', 'blue'],
+['"XURU XURU, CADE O XURU XURU. Facilis dignissimos quibusdam illo"', 'Lorem ipsum dolor sit ', 'blue']]
 console.log(depoList);
 let dep = 1
 let leftPosition = 0;
@@ -139,11 +144,11 @@ setInterval(() => {
       dialogBox.innerHTML = `${depoList[dep][0]}`;
       depoInfo.innerHTML = `${depoList[dep][1]}`;
     }, 1000); // delay execution by 1 second
-    if(dep == depoList.length -1){
+    if (dep == depoList.length - 1) {
 
       dep = 0
       console.log(dep);
-    }else {
+    } else {
       dep++;
       console.log(dep);
     }
