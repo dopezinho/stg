@@ -473,14 +473,7 @@ footer {
 .footCols {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
-}
-
-.square {
-    border-radius: 300px;
-    position: absolute;
-    left: 7%;
-    top: 472%;
+    justify-content: space-around;
 }
 
 .footCol2, .footCol3, .footCol4 {
@@ -616,10 +609,6 @@ footer {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .square {
-        left: 27.5%;
-        top: 923%;
-    }
     
     .footCol2, .footCol3, .footCol4 {
         font-size: 18px;
@@ -627,11 +616,7 @@ footer {
         padding: 3vh;
     }
     
-    .footCol2, .footCol3 {
-        padding-top: 15vh;
-    }
-    
     .footCol4 {
-        border: transparent;
+        border-left: transparent;
     }
 }
