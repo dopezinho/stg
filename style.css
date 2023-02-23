@@ -167,7 +167,7 @@ header {
 .initialPage .content h1 {
     margin-bottom: 15px;
     font-weight: 900;
-    font-size: large;
+    font-size: clamp(2vh, 3vw, 6vh);
 }
 
 .initialPhotos.current .content {
@@ -240,14 +240,14 @@ header {
 }
 
 .box1 h2, .box2 h2, .box3 h2 {
-    font-size: 3vh;
+    font-size: clamp(1.5vh, 2vw, 7vh);
     font-weight: bold;
     margin-bottom: 3vh;
     text-transform: uppercase;
 }
 
 .box1 h4, .box2 h4, .box3 h4 {
-    font-size: 2vh;
+    font-size: clamp(1rem, 1vw, 2rem);
     padding: 0 5vh 5vh 5vh;
     text-align: center;
 }
@@ -281,7 +281,7 @@ header {
 }
 
 .oqfzTxt h2 {    
-    font-size: 4vh;
+    font-size: clamp(3.5vh, 3vw, 10vh);
     font-weight: bold;
     margin-top: 5vh;
     text-transform: uppercase;
@@ -289,9 +289,9 @@ header {
 
 .oqfzTxt h4 {
     color: #333333eb;
-    font-size: 2.5vh;
+    font-size: clamp(2vh, 1.5vw, 7vh);
     font-weight: 300;
-    max-width: 800px;
+    max-width: 80%;
     text-align: center;
 }
 
@@ -353,17 +353,17 @@ header {
 }
 
 .depoTemplate h1 {
-    font-size: 40px;
-    font-weight: 900;
+    font-size: clamp(4vh, 4vw, 7vh);
+    font-weight: 700;
     border-bottom: #ffffff 0.5px solid;
     margin: 5vh 0;
 }
 
 .depoTemplate p {
-    max-width: 500px;
-    font-size: 16px;
+    font-size: clamp(2vh, 2vw, 5vh);
     font-weight: 100;
-    margin-bottom: 10vh;
+    margin: 0 5vh 10vh 5vh;
+    
 }
 
 .dialogTemplate {
@@ -379,7 +379,7 @@ header {
 .dialogBox {
 	background-color: #fff;
 	padding: 7vh 3vh;
-	font-size: 1.25em;
+	font-size: clamp(2vh, 1.5vw, 6vh);
 	border-radius: 1rem;
     -webkit-box-shadow: 26px 11px 27px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 26px 11px 27px 0px rgba(0,0,0,0.75);
@@ -387,10 +387,8 @@ header {
     color: #484848b5;
     animation: boxAnimation 5s ease-in-out infinite;
     font-style: italic;
-    font-stretch: expanded;
-    left: 29%;
-    margin-left: 5vh;
-    max-width: 75%;
+    margin-left: 3vh;
+    max-width: 90%;
 }
 
 .dialogImage {
@@ -487,22 +485,22 @@ header {
 }
 
 .doaTxt h2 {
-    font-size: 40px;
+    font-size: clamp(4vh, 3vw, 7vh);
     font-weight: bold;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     text-transform: uppercase;
 }
 
 .doaTxt h3 {
-    font-size: 16px;
+    font-size: clamp(1.5vh, 1.5vw, 6vh);
     font-weight: 300;
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
     max-width: 80%;
     text-align: center;
 }
 
 .doaTxt li {
-    font-size: 16px;
+    font-size: clamp(1.5vh, 1.5vw, 6vh);
 }
 
 .doaTxt button {
@@ -511,7 +509,7 @@ header {
     border-radius: 6px;
     color: #fff;
     height: 6vh;
-    margin: 10vh 0;
+    margin: 8vh 0;
     text-transform: uppercase;
     width: 15vh;
 }
@@ -526,7 +524,7 @@ header {
 }
 
 .newsHead h2 {
-    font-size: 48px;
+    font-size: clamp(4vh, 4vw, 7vh);
     text-transform: uppercase;
     margin: 10vh 0;
 }
@@ -534,13 +532,13 @@ header {
 .newsContent {
     align-items: center;
     display: flex;
-    gap: 20vh;
+    gap: 10vh;
 }
 
 .newsBlock {
     display: flex;
     flex-direction: column;
-    max-width: 22.5vw;
+    max-width: 25vw;
 }
 
 .newsBlock img {
@@ -549,16 +547,17 @@ header {
 }
 
 .newsBlock h3 {
-    font-size: 20px;
+    font-size: clamp(1.5vh, 1.5vw, 6vh);
     margin-bottom: 2vh;
     max-width: 80%;
 }
 .newsBlock p {
+    font-size: clamp(1.5vh, 1vw, 5vh);
     font-weight: 300;
     margin-bottom: 2vh;
 }
 .newsBlock h4 {
-    font-size: 24px;
+    font-size: clamp(2vh, 2vw, 6vh);
     font-weight: 300;
     max-width: 80%;
     margin-bottom: 20vh;
@@ -596,7 +595,7 @@ footer {
 
 .footCols li {
     list-style: none;
-    font-size: 3vh;
+    font-size: clamp(1rem, 1vw, 2.5rem);
 }
 
 .footCols img {
@@ -606,6 +605,7 @@ footer {
 
 .footerFoot h4 {
     color: #fff;
+    font-size: clamp(1rem, 1vw, 2.5rem);
     padding: 5vh;
     text-align: center;
 }
@@ -699,7 +699,6 @@ footer {
     }
     
     .doaTxt h2 {
-        font-size: 36px;
         margin-bottom: 3vh;
     }
     
@@ -708,7 +707,6 @@ footer {
     }
     
     .doaTxt li {
-        font-size: 20px;
         letter-spacing: 0.1vh;
     }
 }
@@ -717,10 +715,6 @@ footer {
 
 
 @media screen and (max-width: 1200px) {    
-    .newsHead h2 {
-        font-size: 40px;
-    }
-    
     .newsContent {
         flex-direction: column;
         gap: 0;
@@ -732,13 +726,6 @@ footer {
     
     .newsBlock img {
         height: 30vh;
-    }
-
-    .newsBlock p {
-        font-weight: 300;
-    }
-    .newsBlock h4 {
-        font-size: 20px;
     }
 } 
 
@@ -752,7 +739,6 @@ footer {
     }
     
     .footCol2, .footCol3, .footCol4 {
-        font-size: 18px;
         font-weight: 300;
         padding: 3vh;
     }
