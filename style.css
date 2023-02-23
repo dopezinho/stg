@@ -137,19 +137,19 @@ header {
 }
 
 .initialPhotos:first-child {
-    background-image: url(./assets/Pic_4.jpg);
+    background-image: url(./assets/ima1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .initialPhotos:nth-child(2) {
-    background-image: url(./assets/Pic_2\ copiar.jpg);
+    background-image: url(./assets/ima2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .initialPhotos:nth-child(3) {
-    background-image: url(./assets/Pic_5.jpg);
+    background-image: url(./assets/ima3.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
