@@ -177,12 +177,13 @@ header {
 }
 
 .changePhoto {
-    position: absolute;
-    bottom: 10vh;
-    left: 50%;
-    height: 5px;
-    width: 25px;
     border: solid 1px #ffffffff;
+    bottom: 10vh;
+    cursor: pointer;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    width: 25px;
     z-index: 1000;
 }
 
@@ -637,6 +638,23 @@ footer {
         margin-right: 1vh;
         margin-bottom: 1vh;
     }
+}
+
+/*  LANDING PAGE IMAGES  */
+
+@media screen and (max-width: 1200px) {
+    .changePhoto {
+        bottom: 10vh;
+        height: 8px;
+        width: 40px;
+    }
+    .changePhoto.pLeft {
+        left: 37%;
+    }
+    
+    .changePhoto.pRight {
+        left: 63%;
+    }    
 }
 
 /*  Landing Page Boxes  */
