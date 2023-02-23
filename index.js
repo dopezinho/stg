@@ -2,10 +2,10 @@
 
 function mobileNav() {
   var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+  if (x.style.opacity === "1") {
+    x.style.opacity = "0";
   } else {
-    x.style.display = "flex";
+    x.style.opacity = "1";
   }
 }
 
@@ -26,40 +26,6 @@ buttons.forEach((button) => {
     }
   });
 });
-
-// initial photos buttons
-
-
-
-/*const nextSlide = () => {
-  const current = document.querySelector('.current')
-  current.classList.remove('current')
-  if(current.nextElementSibling){
-    current.nextElementSibling.classList.add('current')
-  } else {
-    initialPhotos[0].classList.add('current')
-  }
-  setTimeout(() => {current.classList.remove('current')})
-}
-
-const previousSlide = () => {
-  const current = document.querySelector('.current')
-  current.classList.remove('current')
-  if(current.previousElementSibling){
-    current.previousElementSibling.classList.add('current')
-  } else {
-    initialPhotos[initialPhotos.length - 1].classList.add('current')
-  }
-  setTimeout(() => {current.classList.remove('current')})
-}
-
-leftButton.addEventListener('click', e => {
-  previousSlide()
-})
-
-rightButton.addEventListener('click', e => {
-  nextSlide()
-})*/
 
 
 // Buttons to change Photos
@@ -138,8 +104,8 @@ let leftPosition = 0;
 setInterval(() => {
   dialogTemplate.style.animation = 'none';
   requestAnimationFrame(() => {
-    dialogTemplate.style.animation = 'changeDepo 10s ease-in-out infinite';
-    dialogImage.style.animation = 'changeDepo 10s ease-in-out infinite'
+    dialogTemplate.style.animation = 'changeDepo 15s ease-in-out infinite';
+    dialogImage.style.animation = 'changeDepo 15s ease-in-out infinite'
     setTimeout(() => {
       dialogBox.innerHTML = `${depoList[dep][0]}`;
       depoInfo.innerHTML = `${depoList[dep][1]}`;
@@ -153,7 +119,7 @@ setInterval(() => {
       console.log(dep);
     }
   });
-}, 10000)
+}, 15000)
 
 
 
