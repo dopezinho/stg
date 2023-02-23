@@ -609,12 +609,8 @@ footer {
 /*  NAVBAR  */
 
 @media screen and (max-width: 1200px) {
-    header {
-        padding-top: 7vh;
-    }
     .navbar {
-        align-items: center;
-        justify-content: center;
+        min-height: 8vh;
     }    
     .logo {
         left: 6%;
@@ -624,18 +620,23 @@ footer {
         display: flex;
     }
     #myLinks {
-        opacity: 0;
+        display: none;
         flex-direction: column;
+        margin-top: 7vh;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        z-index: 100000;
     }
     #myLinks a:nth-child(3){
         margin-right: 1vh;
-        margin-bottom: 6vh;
+        margin-bottom: 1vh;
     }
 }
 
 /*  Landing Page Boxes  */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     .lpBoxes {
         flex-direction: column;
     }
@@ -648,7 +649,7 @@ footer {
 
 /*  DEPOSIÇÕES  */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     .dialogTemplate {        
         align-items: center;
         flex-direction: column-reverse;
@@ -659,7 +660,7 @@ footer {
 /*  DOAÇÕES  */
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     .doaSec {
         flex-direction: column;
     }
@@ -691,7 +692,7 @@ footer {
 /*  Notícias  */
 
 
-@media screen and (max-width: 600px) {    
+@media screen and (max-width: 1200px) {    
     .newsHead h2 {
         font-size: 40px;
     }
@@ -720,7 +721,7 @@ footer {
 /*  Footer  */
 
 
-@media screen and (max-width: 600px) {  
+@media screen and (max-width: 1200px) {  
     .footCols {
         flex-direction: column;
         justify-content: flex-start;
