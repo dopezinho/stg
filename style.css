@@ -691,14 +691,18 @@ footer {
 /*  Notícias  */
 
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 600px) {    
     .newsHead h2 {
         font-size: 40px;
     }
     
     .newsContent {
         flex-direction: column;
+        gap: 0;
+    }
+
+    .newsBlock {        
+        max-width: 70vw;
     }
     
     .newsBlock img {
@@ -707,7 +711,6 @@ footer {
 
     .newsBlock p {
         font-weight: 300;
-        margin-left: -45vw;
     }
     .newsBlock h4 {
         font-size: 20px;
