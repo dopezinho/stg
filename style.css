@@ -303,7 +303,7 @@ header {
 
 .oqfz {
     align-items: center;   
-    background-color: #a7cfda48;
+    background-color: #d1d6d6;
     border-top: solid 3px #dddddd;
     border-radius: 5px;
     border: 3px solid #dddddd98;
@@ -645,6 +645,16 @@ footer {
         max-width: 80%;
     }
 }
+
+/*  DEPOSIÇÕES  */
+
+@media screen and (max-width: 600px) {
+    .dialogTemplate {        
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+
 
 /*  DOAÇÕES  */
 
