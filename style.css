@@ -597,6 +597,11 @@ footer {
     list-style: none;
 }
 
+.footCols img {
+    cursor: pointer; 
+    height: 5vh;
+}
+
 .footerFoot h4 {
     color: #fff;
     padding: 5vh;
