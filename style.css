@@ -641,7 +641,7 @@ footer {
         display: flex;
     }
     #myLinks {
-        opacity: 0;
+        display: flex;
         flex-direction: column;
     }
     #myLinks a:nth-child(3){
