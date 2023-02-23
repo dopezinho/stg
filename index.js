@@ -2,10 +2,10 @@
 
 function mobileNav() {
   var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+  if (x.style.opacity === "1") {
+    x.style.opacity = "0";
   } else {
-    x.style.display = "flex";
+    x.style.opacity = "1";
   }
 }
 
