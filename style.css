@@ -466,6 +466,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 10vh;
 }
 
 .doaImg {
@@ -474,7 +475,7 @@ header {
 }
 
 .doaImg img {
-    height: 90vh;
+    height: 80vh;
 }
 
 .doaTxt {
@@ -492,7 +493,7 @@ header {
 }
 
 .doaTxt h3 {
-    font-size: clamp(1.5vh, 1.5vw, 6vh);
+    font-size: clamp(2vh, 1.5vw, 6vh);
     font-weight: 300;
     margin-bottom: 6vh;
     max-width: 80%;
