@@ -118,7 +118,6 @@ header {
     height: 60vh;
     overflow: hidden;
     position: relative;
-    width: 100%;
 }
 
 .initialPhotos {
@@ -155,10 +154,9 @@ header {
 
 .initialPage .content {
     background-color: #dddddd60;
-    bottom: 40%;
+    bottom: 30%;
     left: 20%;
-    opacity: 0;
-    padding: 20px;
+    padding: 2vh;
     position: absolute;
     width: 35%;
 }
@@ -166,7 +164,7 @@ header {
 .initialPage .content h1 {
     font-weight: 900;
     font-size: clamp(2vh, 3vw, 6vh);
-    margin-bottom: 15px;
+    margin-bottom: 1vh;
 }
 
 .initialPage .content p {
@@ -510,6 +508,7 @@ header {
     border: transparent;
     border-radius: 6px;
     color: #fff;
+    cursor: pointer;
     height: 6vh;
     margin: 8vh 0;
     text-transform: uppercase;
@@ -561,7 +560,7 @@ header {
     font-size: clamp(2vh, 2vw, 6vh);
     font-weight: 300;
     max-width: 80%;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 /*  FOOTER  */
@@ -641,7 +640,7 @@ footer {
     }
 }
 
-/*  LANDING PAGE IMAGES  */
+/*  LANDING PAGE  */
 
 @media screen and (max-width: 1200px) {
     .changePhoto.pLeft {
@@ -650,11 +649,6 @@ footer {
     .changePhoto.pRight {
         left: 63%;
     }    
-}
-
-/*  Landing Page Boxes  */
-
-@media screen and (max-width: 1200px) {
     .lpBoxes {
         flex-direction: column;
     }    
@@ -706,7 +700,6 @@ footer {
 }
 
 /*  Notícias  */
-
 
 @media screen and (max-width: 1200px) {    
     .newsContent {
