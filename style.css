@@ -169,6 +169,10 @@ header {
     margin-bottom: 15px;
 }
 
+.initialPage .content p {
+    font-size: clamp(2vh, 1.5vw, 7vh);
+}
+
 .initialPhotos.current .content {
     left: 20%;
     opacity: 1;
@@ -237,14 +241,15 @@ header {
 }
 
 .box1 h2, .box2 h2, .box3 h2 {
-    font-size: clamp(1.5vh, 2vw, 7vh);
+    font-size: clamp(3vh, 2vw, 5vh);
     font-weight: bold;
     margin-bottom: 3vh;
     text-transform: uppercase;
 }
 
 .box1 h4, .box2 h4, .box3 h4 {
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(2vh, 1vw, 6vh);
+    font-weight: bold;
     padding: 0 5vh 5vh 5vh;
     text-align: center;
 }
@@ -320,18 +325,21 @@ header {
 }
 
 .oqfz img {
-    width: 280px;
+    width: 20vw;
 }
 
 .oqfz h3 {
+    font-size: clamp(3vh, 2vw, 5vh);
+    font-weight: bold;
     margin-bottom: 2vh;
     text-align: center;
     text-transform: uppercase;
 }
 
 .oqfz h4 {
+    font-size: clamp(2vh, 1.5vw, 5vh);
     font-weight: 300;
-    max-width: 280px;
+    max-width: 90%;
     margin-bottom: 2vh;
     text-align: center;
 }
@@ -636,11 +644,6 @@ footer {
 /*  LANDING PAGE IMAGES  */
 
 @media screen and (max-width: 1200px) {
-    .changePhoto {
-        bottom: 10vh;
-        height: 8px;
-        width: 40px;
-    }
     .changePhoto.pLeft {
         left: 37%;
     }    
@@ -658,6 +661,14 @@ footer {
     .box1, .box2, .box3 {
         margin-top: 5vh;
         max-width: 80%;
+    }
+}
+
+/*  OQFZ  */
+
+@media screen and (max-width: 1200px) {
+    .oqfz img {
+        width: 50vw;
     }
 }
 
